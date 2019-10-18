@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  <title>Hello!</title>
+</head>
+
+<!-- question structure -->
+<body>
+<h1>Welcome to my Quiz</h1>
+
+  <div class="quiz_wrapper">
+
+    <!-- question -->
+    <div class="question" id="questionBox">
+    </div>
+
+    <!-- options -->
+    <div class="options">
+      <ul>
+        <li id="option1" onclick="button(this)"></li>
+        <li id="option2" onclick="button(this)"></li>
+        <li id="option3" onclick="button(this)"></li>
+        <li id="option4" onclick="button(this)"></li>
+      </ul>
+    </div>
+
+    <div class="score">
+      <div class="next">
+        <button type="button" onclick="next()">Next</button>
+      </div>
+      <div class="score-card">
+        Score: <span id="scoreCard">0</span>
+      </div>
+    </div>
+
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
